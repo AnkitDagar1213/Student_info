@@ -10,7 +10,7 @@ import lombok.*;
 @Table(name="Laptop_Info")
 public class Laptop {
     @Id
-    private String ID;
+    private String Id;
     private String name;
     private String brand;
     private Integer price;

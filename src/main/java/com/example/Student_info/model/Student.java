@@ -12,7 +12,7 @@ import lombok.*;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String ID;
+    private String Id;
     private String name;
     private String age;
     private String phoneNumber;

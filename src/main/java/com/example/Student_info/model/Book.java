@@ -9,7 +9,7 @@ import lombok.*;
 @Table(name="Book_Info")
 public class Book {
     @Id
-    private String ID;
+    private String Id;
     private String title;
     private String author;
     private String description;

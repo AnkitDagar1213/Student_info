@@ -15,7 +15,7 @@ import java.util.*;
 
 public class Course {
     @Id
-    private String ID;
+    private String Id;
     private String title;
     private String description;
     private String duration;
