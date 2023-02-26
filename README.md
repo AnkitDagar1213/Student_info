@@ -1,65 +1,63 @@
-# Student Info
+# Mapping
 
-This is an Ecommerce API built with Java using Spring Boot and Hibernate.
+## Frameworks and Language Used:
 
-## Frameworks and Languages Used:
 -Java 11
 
--Maven
+-Spring Boot 2.5.5
 
--Spring Boot
-
--Hibernate
-
--H2 Database
+-MySQL Workbench
 
 -Swagger
 
-## Data Flow:
 
-### Controller-
+## Data Flow-
 
-The controller layer handles incoming requests and sends responses back to the client. It maps URLs to appropriate methods and uses DTOs (Data Transfer Objects) to communicate with the service layer.
+### Controller:
 
-### Services-
+LaptopController: Handles the CRUD operations for Laptop model.
 
-The service layer implements business logic and performs operations on the data, such as creating, reading, updating, and deleting entities. It uses repositories to communicate with the database and maps entities to DTOs to communicate with the controller layer.
+StudentController: Handles the CRUD operations for Student model.
 
-### Repository-
+CourseController: Handles the CRUD operations for Course model.
 
-The repository layer handles database operations, such as retrieving and storing data, and uses Hibernate as the ORM (Object-Relational Mapping) tool to map Java objects to database tables.
+BookController: Handles the CRUD operations for Book model.
+
+### Services:
+
+LaptopService: Implements business logic for Laptop model.
+
+StudentService: Implements business logic for Student model.
+
+CourseService: Implements business logic for Course model.
+
+BookService: Implements business logic for Book model.
+
+### Repository:
+
+LaptopRepository: Contains methods for CRUD operations on Laptop model.
+
+StudentRepository: Contains methods for CRUD operations on Student model.
+
+CourseRepository: Contains methods for CRUD operations on Course model.
+
+BookRepository: Contains methods for CRUD operations on Book model.
+
 
 ## Database Design:
 
-The database design includes the following entities:
+Four entities are present: Laptop, Student, Course, and Book.
 
--User
+Laptop and Student have a one-to-one relationship.
 
--Product
+Course and Student have a many-to-many relationship.
 
--Order
+Book and Student have a many-to-one relationship.
 
--Address
+### Data Structure Used
 
-The User entity has a one-to-many relationship with the Order entity, meaning that one user can have multiple orders. The Product entity is not directly related to any other entities. The Order entity has a many-to-one relationship with both the User and Product entities, meaning that many orders can belong to one user or one product. The Address entity has a many-to-one relationship with the User entity, meaning that one user can have multiple addresses.
-
-## Data Structures Used:
-
-DTOs (Data Transfer Objects) - used to transfer data between the controller and service layers
-
-Entities - used to model database tables and perform CRUD (Create, Read, Update, Delete) operations
-
-Repositories - used to perform database operations and communicate with the service layer
-
-Services - used to implement business logic and communicate with the repository layer
-
+ArrayList: Used in Course entity for storing Student entities.
 
 ## Project Summary:
 
-This API allows users to create and manage orders for products in an ecommerce store. Users can create an account, view products by category, add products to their cart, and place orders. The API also provides endpoints for retrieving user and order data
-
-## Links:
-
--Swagger UI: http://localhost:8080/swagger-ui.html
-
--H2 Console: http://localhost:8080/h2-console
+The Mapping project is a Spring Boot project that showcases the implementation of one-to-one, one-to-many, many-to-one, and many-to-many relationships in a Spring Boot application. The project also demonstrates the usage of embedded models. The project has implemented CRUD operations for each model. MySQL Workbench has been used as the database management system, and Swagger has been used to create the API documentation.
