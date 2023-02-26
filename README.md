@@ -2,7 +2,7 @@
 
 ## Frameworks and Language Used:
 
--Java 11
+-Java 19
 
 -Spring Boot 2.5.5
 
