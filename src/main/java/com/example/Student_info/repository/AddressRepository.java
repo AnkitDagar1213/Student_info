@@ -1,0 +1,7 @@
+package com.example.Student_info.repository;
+
+import com.example.Student_info.model.Address;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AddressRepository extends JpaRepository<Address,Integer> {
+}
