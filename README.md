@@ -1,4 +1,4 @@
-# Ecommerce-API
+# Student Info
 
 This is an Ecommerce API built with Java using Spring Boot and Hibernate.
 
