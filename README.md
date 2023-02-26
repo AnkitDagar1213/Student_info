@@ -23,8 +23,6 @@ CourseController: Handles the CRUD operations for Course model.
 
 BookController: Handles the CRUD operations for Book model.
 
-AddressController: Handles the CRUD operations for Book model.
-
 ### Services:
 
 LaptopService: Implements business logic for Laptop model.
@@ -35,8 +33,6 @@ CourseService: Implements business logic for Course model.
 
 BookService: Implements business logic for Book model.
 
-AddressService: Implements business logic for Book model.
-
 ### Repository:
 
 LaptopRepository: Contains methods for CRUD operations on Laptop model.
@@ -46,9 +42,6 @@ StudentRepository: Contains methods for CRUD operations on Student model.
 CourseRepository: Contains methods for CRUD operations on Course model.
 
 BookRepository: Contains methods for CRUD operations on Book model.
-
-AddressRepository: Contains methods for CRUD operations on Book model.
-
 
 ## Database Design:
 
