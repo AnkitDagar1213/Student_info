@@ -10,10 +10,14 @@ import lombok.*;
 @Table(name="Laptop_Info")
 public class Laptop {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String Id;
+    @Column(name="laptop_name")
     private String name;
+    @Column(name="laptop_brand")
     private String brand;
-    private Integer price;
+    @Column(name="laptop_price")
+    private int price;
 
     @OneToOne
     private Student student;

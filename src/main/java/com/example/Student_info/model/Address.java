@@ -7,11 +7,10 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @Builder
-@Table(name="Address_Info")
+@Embeddable
 public class Address {
-    private String landmark;
-    @Id
     private String zipcode;
+    private String landmark;
     private String district;
     private String state;
     private String country;

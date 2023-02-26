@@ -15,10 +15,14 @@ import java.util.*;
 
 public class Course {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String Id;
+    @Column(name="course_title")
     private String title;
+    @Column(name="course_description")
     private String description;
+    @Column(name="course_duration")
     private String duration;
     @ManyToMany
-    List<Student> studentList = new ArrayList<>();
+    private List<Student> studentList = new ArrayList<>();
 }
