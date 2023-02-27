@@ -5,8 +5,6 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Builder
 @Embeddable
 public class Address {
     private String zipcode;

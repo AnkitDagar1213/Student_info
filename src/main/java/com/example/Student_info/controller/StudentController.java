@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 @RestController
-@RequestMapping("/api/v1/Info")
 public class StudentController {
     @Autowired
     private StudentService studentService;
