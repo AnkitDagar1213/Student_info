@@ -11,7 +11,7 @@ import lombok.*;
 public class Laptop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String Id;
+    private String Laptop_Id;
     @Column(name="laptop_name")
     private String name;
     @Column(name="laptop_brand")

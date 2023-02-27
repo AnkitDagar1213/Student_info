@@ -10,7 +10,7 @@ import lombok.*;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String Id;
+    private String Book_Id;
     @Column(name="book_title")
     private String title;
     @Column(name="book_author")
