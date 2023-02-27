@@ -23,7 +23,7 @@ public class StudentService {
     }
     public void updateStudentById(int id, Student newStudent) {
         Student stud = studentRepo.findById(id).get();
-        stud.setId(newStudent.getId());
+        stud.setStudent_Id(newStudent.getStudent_Id());
         stud.setName(newStudent.getName());
         stud.setAge(newStudent.getAge());
         stud.setBranch(newStudent.getBranch());

@@ -36,7 +36,7 @@ public class LaptopService {
     public void updateLaptopById(int id, Laptop newLaptop) {
         Laptop lap = laptopRepo.findById(id).get();
         lap.setBrand(newLaptop.getBrand());
-        lap.setId(newLaptop.getId());
+        lap.setLaptop_Id(newLaptop.getLaptop_Id());
         lap.setName(newLaptop.getName());
         lap.setStudent(newLaptop.getStudent());
         lap.setPrice(newLaptop.getPrice());

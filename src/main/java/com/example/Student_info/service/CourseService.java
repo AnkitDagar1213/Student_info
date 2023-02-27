@@ -37,7 +37,7 @@ public class CourseService {
     public void updateCourseById(int id,Course newCourse) {
         Course course = courseRepo.findById(id).get();
 
-        course.setId(newCourse.getId());
+        course.setCourse_Id(newCourse.getCourse_Id());
         course.setDescription(newCourse.getDescription());
         course.setDuration(newCourse.getDuration());
         course.setTitle(newCourse.getTitle());
